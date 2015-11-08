@@ -32,9 +32,9 @@ par(mar=c(4,5,3,2))
 with(o,{
   plot(datetime,Global_active_power,type="l",xlab="", ylab="Global Active Power")
   plot(datetime,Voltage,type="l",ylab="Voltage",xlab="datetime")
-  plot(datetime,Sub_metering_1,type="l", col="blue", ylab="Energy sub metering", xlab="")
+  plot(datetime,Sub_metering_1,type="l", col="black", ylab="Energy sub metering", xlab="")
     lines(o$datetime,o$Sub_metering_2,col="red")
-    lines(o$datetime,o$Sub_metering_3,col="black")
+    lines(o$datetime,o$Sub_metering_3,col="blue")
   legend("topright", legend=c("Sub_metering_1","Sub_metering_2", "Sub_metering_3"), lty=c(1,1,1),lwd=c(2,2,2),col=c("blue","red","black"), cex=0.5,bty="n")
   plot(datetime,Global_reactive_power,type="l")
 }
